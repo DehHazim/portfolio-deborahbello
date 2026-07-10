@@ -1,17 +1,17 @@
 # Portfolio Deborah Bello
 
-Site estatico de portfolio para engenheira de software, pronto para GitHub Pages e sem dependencia de API key.
+Static portfolio website for a software engineer, ready for GitHub Pages and with no API key dependency.
 
-## Como publicar no GitHub Pages
+## How to publish on GitHub Pages
 
-1. Envie estes arquivos para um repositorio no GitHub.
-2. Acesse `Settings` > `Pages`.
-3. Em `Build and deployment`, selecione `Deploy from a branch`.
-4. Escolha a branch principal e a pasta `/root`.
-5. Salve e aguarde o link publicado.
+1. Push these files to a GitHub repository.
+2. Go to `Settings` > `Pages`.
+3. Under `Build and deployment`, select `Deploy from a branch`.
+4. Choose the main branch and the `/root` folder.
+5. Save and wait for the published link.
 
-## Personalizacao
+## Customization
 
-- Atualize email, LinkedIn e GitHub em `index.html`.
-- Substitua o card "Projeto real a documentar" por projetos reais.
-- Troque os bullets de curriculo por resultados suportados por codigo, metricas ou entregas comprovaveis.
+- Update email, LinkedIn, and GitHub links in `index.html`.
+- Replace the "Real project to document" card with real projects.
+- Replace the resume bullet points with outcomes supported by code, metrics, or verifiable deliveries.
