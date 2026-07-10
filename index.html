@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio de Deborah Bello, engenheira de software.">
+    <title>Deborah Bello | Engenheira de Software</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Voltar ao inicio">
+        <span class="brand-mark">DB</span>
+        <span>Deborah Bello</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegacao principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#arquitetura">Arquitetura</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Engenharia de software orientada a produto</p>
+          <h1>Deborah Bello</h1>
+          <p class="hero-subtitle">
+            Engenheira de Software focada em construir interfaces claras, sistemas organizados
+            e analises tecnicas que transformam codigo real em narrativa profissional precisa.
+          </p>
+          <div class="hero-actions" aria-label="Acoes principais">
+            <a class="button primary" href="#projetos">Ver portfolio</a>
+            <a class="button secondary" href="#contato">Entrar em contato</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Visual de codigo e arquitetura">
+          <div class="visual-toolbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <pre><code>type PortfolioSignal = {
+  architecture: "clear";
+  delivery: "production-minded";
+  evidence: "code-supported";
+};
+
+const focus = [
+  "frontend",
+  "system design",
+  "business logic",
+  "developer experience"
+];</code></pre>
+        </div>
+      </section>
+
+      <section class="section intro-section" aria-labelledby="resumo-title">
+        <div>
+          <p class="section-kicker">Resumo</p>
+          <h2 id="resumo-title">Portfolio tecnico para mostrar decisao, qualidade e impacto.</h2>
+        </div>
+        <p>
+          Este site foi estruturado para apresentar projetos com precisao: o que foi construido,
+          quais problemas foram resolvidos, como a arquitetura funciona e quais sinais de senioridade
+          aparecem no codigo. Todo o conteudo pode ser publicado no GitHub Pages sem backend.
+        </p>
+      </section>
+
+      <section id="projetos" class="section" aria-labelledby="projetos-title">
+        <div class="section-heading">
+          <p class="section-kicker">Projetos</p>
+          <h2 id="projetos-title">Estudos de caso tecnicos</h2>
+          <p>
+            Use os cards abaixo para documentar projetos reais. Os textos evitam afirmar detalhes
+            que nao estejam comprovados pelo codigo.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="tag">Portfolio</span>
+              <span class="status">Estatico</span>
+            </div>
+            <h3>Portfolio profissional</h3>
+            <p>
+              Site responsivo construido para GitHub Pages, sem dependencia de API key, com foco em
+              clareza editorial, apresentacao tecnica e manutencao simples.
+            </p>
+            <ul>
+              <li>HTML, CSS e JavaScript puro</li>
+              <li>Layout responsivo e acessivel</li>
+              <li>Publicacao direta como site estatico</li>
+            </ul>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-topline">
+              <span class="tag">Metodo</span>
+              <span class="status">Code-based</span>
+            </div>
+            <h3>Analise de codebase para resume</h3>
+            <p>
+              Framework de analise para extrair experiencia tecnica real de projetos em producao:
+              arquitetura, integracoes, regras de negocio, seguranca, DevOps e sinais de senioridade.
+            </p>
+            <ul>
+              <li>Sem alucinacao: apenas evidencias do codigo</li>
+              <li>Foco em decisoes arquiteturais e trade-offs</li>
+              <li>Saida pronta para portfolio e curriculo</li>
+            </ul>
+          </article>
+
+          <article class="project-card muted-card">
+            <div class="project-topline">
+              <span class="tag">Em edicao</span>
+              <span class="status">Adicionar</span>
+            </div>
+            <h3>Projeto real a documentar</h3>
+            <p>
+              Substitua este card por um sistema real analisado a partir do repositorio. Inclua dominio,
+              stack, fluxos, integracoes, problemas resolvidos e resultados observaveis.
+            </p>
+            <ul>
+              <li>Resumo do produto</li>
+              <li>Arquitetura e modulos principais</li>
+              <li>Destaques de engenharia</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="arquitetura" class="section split-section" aria-labelledby="arquitetura-title">
+        <div class="section-heading compact">
+          <p class="section-kicker">Arquitetura</p>
+          <h2 id="arquitetura-title">Como os projetos sao apresentados</h2>
+          <p>
+            A estrutura abaixo ajuda a transformar repositorios em estudos de caso fortes, com linguagem
+            precisa para recrutadores tecnicos e liderancas de engenharia.
+          </p>
+        </div>
+
+        <div class="signal-list">
+          <article>
+            <span>01</span>
+            <h3>Visao do sistema</h3>
+            <p>Dominio, tipo de produto, objetivo do sistema e fluxo principal de dados.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Modulos e regras</h3>
+            <p>Features centrais, regras de negocio, workflows e pontos de complexidade.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Integracoes</h3>
+            <p>Servicos externos, autenticacao, pagamentos, storage, APIs e como sao usados.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Sinais avancados</h3>
+            <p>Idempotencia, retry, cache, seguranca, observabilidade, performance e DevOps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section" aria-labelledby="experiencia-title">
+        <div class="section-heading">
+          <p class="section-kicker">Experiencia</p>
+          <h2 id="experiencia-title">Competencias em destaque</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skill-panel">
+            <h3>Frontend e produto</h3>
+            <p>Interfaces responsivas, organizacao visual, acessibilidade, componentes reutilizaveis e foco em usabilidade.</p>
+          </div>
+          <div class="skill-panel">
+            <h3>Arquitetura</h3>
+            <p>Leitura de sistemas, separacao de responsabilidades, contratos de dados, fluxos e manutencao evolutiva.</p>
+          </div>
+          <div class="skill-panel">
+            <h3>Qualidade</h3>
+            <p>Tratamento de erros, validacao, revisao tecnica, documentacao objetiva e reducao de ambiguidade.</p>
+          </div>
+          <div class="skill-panel">
+            <h3>Comunicacao tecnica</h3>
+            <p>Traducao de codigo em impacto, bullets de curriculo, estudos de caso e explicacao de decisoes tecnicas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resume-section" aria-labelledby="resume-title">
+        <div>
+          <p class="section-kicker">Curriculo</p>
+          <h2 id="resume-title">Bullets prontos para adaptar com evidencias reais</h2>
+        </div>
+        <div class="resume-list">
+          <p>Desenvolveu interfaces responsivas e publicaveis como site estatico, reduzindo dependencia operacional de backend.</p>
+          <p>Estruturou documentacao tecnica orientada a evidencias para transformar repositorios em estudos de caso profissionais.</p>
+          <p>Mapeou features, fluxos, integracoes e decisoes arquiteturais para comunicar impacto tecnico com precisao.</p>
+        </div>
+      </section>
+
+      <section id="contato" class="section contact-section" aria-labelledby="contato-title">
+        <div>
+          <p class="section-kicker">Contato</p>
+          <h2 id="contato-title">Vamos conversar sobre software, produto e arquitetura.</h2>
+          <p>
+            Atualize os links abaixo com seus canais profissionais antes de publicar o site.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:seu-email@exemplo.com">Email</a>
+          <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Deborah Bello</span>
+      <span>Portfolio estatico para GitHub Pages</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
