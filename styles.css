@@ -304,8 +304,16 @@ pre {
 }
 
 .project-card {
+  display: block;
   min-height: 390px;
   padding: 24px;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(88, 213, 255, 0.46);
+  box-shadow: 0 24px 70px rgba(0, 8, 24, 0.34);
 }
 
 .project-card.featured {
