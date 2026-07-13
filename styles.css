@@ -1,16 +1,22 @@
 :root {
-  --bg: #07152f;
-  --surface: rgba(12, 30, 62, 0.72);
-  --surface-soft: rgba(255, 255, 255, 0.08);
-  --surface-strong: #061126;
-  --text: #eef6ff;
-  --muted: #a8bad2;
-  --line: rgba(184, 213, 255, 0.18);
-  --accent: #58d5ff;
-  --accent-strong: #27b5e6;
+  --bg: #050d20;
+  --surface: rgba(15, 34, 68, 0.66);
+  --surface-soft: rgba(255, 255, 255, 0.07);
+  --surface-strong: #06132b;
+  --text: #f0f6ff;
+  --muted: #9fb4d4;
+  --line: rgba(160, 200, 255, 0.16);
+  --accent: #5ec8ff;
+  --accent-strong: #2f8fe0;
+  --accent-soft: #8fdcff;
   --coral: #9bdcff;
   --gold: #8be7c9;
-  --shadow: 0 28px 90px rgba(0, 8, 24, 0.42);
+  --shadow: 0 30px 100px rgba(0, 6, 22, 0.48);
+  --radius-lg: 18px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --font-display: "Sora", "Segoe UI", Arial, sans-serif;
+  --font-body: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 * {
@@ -24,13 +30,22 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 12% 12%, rgba(49, 130, 255, 0.22), transparent 30%),
-    radial-gradient(circle at 88% 4%, rgba(88, 213, 255, 0.16), transparent 28%),
-    linear-gradient(135deg, #061126 0%, #0a2450 42%, #0e3a7a 100%);
+    radial-gradient(circle at 10% 8%, rgba(66, 145, 255, 0.24), transparent 32%),
+    radial-gradient(circle at 90% 0%, rgba(94, 200, 255, 0.18), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(47, 143, 224, 0.14), transparent 40%),
+    linear-gradient(160deg, #050b1a 0%, #081b3f 30%, #0d3372 62%, #1a56a8 100%);
   background-attachment: fixed;
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.brand {
+  font-family: var(--font-display);
 }
 
 a {
@@ -72,11 +87,12 @@ a {
   width: 38px;
   height: 38px;
   place-items: center;
-  border-radius: 8px;
-  border: 1px solid rgba(88, 213, 255, 0.28);
-  background: linear-gradient(135deg, rgba(88, 213, 255, 0.2), rgba(255, 255, 255, 0.06));
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(94, 200, 255, 0.3);
+  background: linear-gradient(135deg, rgba(94, 200, 255, 0.22), rgba(255, 255, 255, 0.06));
   color: var(--accent);
   font-size: 0.85rem;
+  letter-spacing: 0.4px;
 }
 
 .main-nav {
@@ -129,22 +145,26 @@ p {
 h1 {
   max-width: 780px;
   margin-bottom: 18px;
+  background: linear-gradient(120deg, #ffffff 20%, var(--accent-soft) 65%, var(--accent) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: clamp(3.4rem, 8vw, 7.5rem);
   line-height: 0.94;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
 }
 
 h2 {
   margin-bottom: 14px;
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 1.05;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
 }
 
 h3 {
   margin-bottom: 10px;
-  font-size: 1.18rem;
-  line-height: 1.25;
+  font-size: 1.2rem;
+  line-height: 1.3;
   letter-spacing: 0;
 }
 
@@ -166,10 +186,11 @@ h3 {
   align-items: center;
   justify-content: center;
   min-height: 46px;
-  padding: 12px 18px;
+  padding: 12px 20px;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  font-weight: 800;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 700;
   color: var(--text);
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
@@ -180,13 +201,13 @@ h3 {
 
 .button.primary {
   border-color: var(--accent);
-  background: linear-gradient(135deg, #58d5ff, #2b75ff);
+  background: linear-gradient(135deg, #5ec8ff, #2a6fe8);
   color: #061126;
-  box-shadow: 0 16px 36px rgba(39, 181, 230, 0.2);
+  box-shadow: 0 16px 36px rgba(47, 143, 224, 0.25);
 }
 
 .button.primary:hover {
-  background: linear-gradient(135deg, #7ee1ff, #3e86ff);
+  background: linear-gradient(135deg, #86d8ff, #3f83ff);
 }
 
 .button.secondary {
@@ -196,9 +217,9 @@ h3 {
 .hero-visual {
   overflow: hidden;
   border: 1px solid rgba(174, 215, 255, 0.22);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   background:
-    linear-gradient(135deg, rgba(10, 36, 80, 0.98), rgba(6, 17, 38, 0.98)),
+    linear-gradient(135deg, rgba(11, 39, 86, 0.98), rgba(6, 17, 38, 0.98)),
     var(--surface-strong);
   box-shadow: var(--shadow);
 }
@@ -297,7 +318,7 @@ pre {
 .skill-panel,
 .signal-list article {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: 0 18px 52px rgba(0, 8, 24, 0.22);
   backdrop-filter: blur(18px);
@@ -305,26 +326,30 @@ pre {
 
 .project-card {
   display: block;
-  min-height: 390px;
-  padding: 24px;
-  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  min-height: 420px;
+  padding: 26px;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(88, 213, 255, 0.46);
-  box-shadow: 0 24px 70px rgba(0, 8, 24, 0.34);
+  transform: translateY(-6px);
+  border-color: rgba(94, 200, 255, 0.5);
+  box-shadow: 0 28px 80px rgba(0, 8, 24, 0.38);
 }
 
 .project-card.featured {
-  border-color: rgba(88, 213, 255, 0.32);
-  background: linear-gradient(145deg, rgba(21, 76, 154, 0.92), rgba(6, 17, 38, 0.95));
+  border-color: rgba(94, 200, 255, 0.36);
+  background: linear-gradient(155deg, rgba(24, 82, 166, 0.92), rgba(6, 19, 43, 0.96));
   color: #fff;
 }
 
 .project-card.featured p,
 .project-card.featured li {
-  color: rgba(238, 246, 255, 0.76);
+  color: rgba(240, 246, 255, 0.78);
+}
+
+.project-card.featured .tech-stack {
+  color: var(--accent-soft);
 }
 
 .muted-card {
@@ -334,11 +359,19 @@ pre {
 .project-topline {
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
 }
 
 .status {
   color: var(--coral);
+}
+
+.tech-stack {
+  margin: 0 0 20px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .project-card p,
@@ -350,8 +383,14 @@ pre {
 }
 
 .project-card ul {
-  margin: 22px 0 0;
+  display: grid;
+  gap: 10px;
+  margin: 0;
   padding-left: 18px;
+}
+
+.project-card li {
+  line-height: 1.5;
 }
 
 .split-section {
